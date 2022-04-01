@@ -1,9 +1,10 @@
 import 'nextra-theme-blog/style.css'
 import Head from 'next/head'
+import { AppProps } from 'next/app'
 
 import '../styles/main.css'
 
-export default function Nextra({ Component, pageProps }) {
+const Nextra = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
@@ -25,3 +26,5 @@ export default function Nextra({ Component, pageProps }) {
     </>
   )
 }
+
+export default Nextra
