@@ -14,6 +14,10 @@
   font-named-instance: 'Italic';
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
@@ -71,7 +75,7 @@ img.next-image {
 .social-block {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 20px;
   height: 30px;
   align-items: center;

@@ -14,51 +14,22 @@ This portfolio is built with **Next.js** and a library called [Nextra](https://n
 
 ---
 
+import Socials from '../components/Socials'
 import Image from 'next/image'
 
 <div>
-  <div className="social-block">
-    <Image
-      src="/images/twitter.png"
-      alt="Twitter"
-      width={30}
-      height={30}
-      priority
-      className=""
-    />
+  <Socials imageSrc="/images/twitter.png" alt="Twitter">
     [@deepso7](https://twitter.com/Deepso7)
-  </div>
-  <div className="social-block">
-    <Image
-      src="/images/github.png"
-      alt="Github"
-      width={30}
-      height={30}
-      priority
-      className="next-image"
-    />
+  </Socials>
+  <Socials imageSrc="/images/github.png" alt="Github">
     [@deepso7](https://github.com/deepso7)
-  </div>
-  <div className="social-block">
-    <Image
-      src="/images/linkedin.png"
-      alt="LinkedIn"
-      width={30}
-      height={30}
-      priority
-      className="next-image"
-    />
-    [@deepanshu-singh-620797191](https://www.linkedin.com/in/deepanshu-singh-620797191/)
-  </div>
-  <div className="social-block">
-    <Image
-      src="/images/gmail.png"
-      alt="Gmail"
-      width={30}
-      height={30}
-      priority
-      className="next-image"
-    />
+  </Socials>
+  <Socials imageSrc="/images/linkedin.png" alt="LinkedIn">
+    [@@deepanshu](https://www.linkedin.com/in/deepanshu-singh-620797191/)
+  </Socials>
+  <Socials imageSrc="/images/gmail.png" alt="Gmail">
     deepanshu@huddle01.com
-  </div>
+  </Socials>
 </div>
+
+---
